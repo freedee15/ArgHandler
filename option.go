@@ -2,6 +2,8 @@ package ArgHandler
 
 import "errors"
 
+//TODO: Add option to define how many arguments an option can take
+
 type option struct {
 	short string
 	long  string
@@ -16,7 +18,4 @@ func NewOption(short string, long string, valid []string) (*option, error) {
 		return nil, errors.New("at least one valid argument to the option is required")
 	}
 	return &option{short: short, long: long, valid: valid}, nil
-}
-
-type argHandler struct {
 }
