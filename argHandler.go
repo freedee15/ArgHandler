@@ -55,6 +55,7 @@ func NewArgHandler(parameters ParameterArray, args []string) (*argHandler, error
 
 					if p.short == string(sub[1]) {
 						currentParam = p
+						results[currentParam] = UNUSED
 						break
 					}
 
