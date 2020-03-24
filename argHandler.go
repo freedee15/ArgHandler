@@ -4,6 +4,10 @@ import (
 	"errors"
 )
 
+const (
+	UNUSED string = " "
+)
+
 type argHandler struct {
 	Results map[*parameter]string
 }
@@ -26,6 +30,7 @@ func NewArgHandler(parameters ParameterArray, args []string) (*argHandler, error
 
 					if p.long == string(sub[2:]) {
 						currentParam = p
+						results[currentParam] = UNUSED
 						break
 					}
 
