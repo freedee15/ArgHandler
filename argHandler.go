@@ -5,7 +5,7 @@ import (
 )
 
 type argHandler struct {
-	results map[*parameter]string
+	Results map[*parameter]string
 }
 
 func NewArgHandler(parameters ParameterArray, args []string) (*argHandler, error) {
