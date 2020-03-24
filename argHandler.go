@@ -8,7 +8,7 @@ type argHandler struct {
 	results map[*parameter]string
 }
 
-func NewArgHandler(parameters []*parameter, args []string) (*argHandler, error) {
+func NewArgHandler(parameters ParameterArray, args []string) (*argHandler, error) {
 
 	var results map[*parameter]string
 	results = make(map[*parameter]string)
