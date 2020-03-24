@@ -91,6 +91,6 @@ func NewArgHandler(parameters ParameterArray, args []string) (*argHandler, error
 		}
 	}
 
-	return &argHandler{results: results}, nil
+	return &argHandler{Results: results}, nil
 
 }
