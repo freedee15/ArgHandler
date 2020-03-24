@@ -5,7 +5,7 @@ import (
 )
 
 const (
-	UNUSED string = " "
+	NOARGS string = " "
 )
 
 type argHandler struct {
@@ -30,7 +30,7 @@ func NewArgHandler(parameters ParameterArray, args []string) (*argHandler, error
 
 					if p.long == string(sub[2:]) {
 						currentParam = p
-						results[currentParam] = UNUSED
+						results[currentParam] = NOARGS
 						break
 					}
 
@@ -55,7 +55,7 @@ func NewArgHandler(parameters ParameterArray, args []string) (*argHandler, error
 
 					if p.short == string(sub[1]) {
 						currentParam = p
-						results[currentParam] = UNUSED
+						results[currentParam] = NOARGS
 						break
 					}
 
