@@ -3,8 +3,6 @@ An argument handler for go
 
 `go get github.com/freedee15/ArgHandler`
 
-**THIS DOESN'T WORK YET**
+Version 0.1
 
-Sorry
-
-Come back later!
+Report any bugs to noahfriedman2@gmail.com
