@@ -8,6 +8,8 @@ import (
 
 //TODO: Add option to define how many arguments a parameter can take
 
+type ParameterArray []*parameter
+
 type parameter struct {
 	short     string
 	long      string
