@@ -115,7 +115,7 @@ func NewArgHandler(parameters ParameterArray, args []string) (*argHandler, error
 				return nil, errors.New("no parameter to give option \"" + a + "\" to")
 			} else {
 
-				if len(currentParam.validArgs) == 0 {
+				if currentParam.validArgs == nil {
 					results[currentParam] = append(results[currentParam], a)
 				} else {
 
