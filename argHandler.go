@@ -23,7 +23,7 @@ func NewArgHandler(parameters ParameterArray, args []string) (*argHandler, error
 	var currentIndex int
 	helpToggled := false
 
-	for i, a := range args {
+	for i, a := range args[1:] {
 
 		sub := []rune(a)
 		if string(sub[0]) == "-" {
